@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'typography', 'title' => 'Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION', 'navName' => 'Typography', 'activeButton' => 'laravel'])
+@extends('layouts.app', ['activePage' => 'typography', 'title' => 'Anka', 'navName' => 'Typography', 'activeButton' => 'laravel'])
 
 @section('content')
     <div class="content">
@@ -8,9 +8,15 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Anka Business Suppoort Services</h4>
-                            <p class="card-category">Created using Montserrat Font Family</p>
+                            <p class="card-category"></p>
                         </div>
-                        <div class="card-body">
+
+
+
+
+
+                        
+                        <!-- <div class="card-body">
                             <div class="typography-line">
                                 <h1>
                                     <span>Header 1</span>The Life of LB Dashboard </h1>
@@ -94,7 +100,7 @@
                                     <small>Use "small" tag for the headers</small>
                                 </h2>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

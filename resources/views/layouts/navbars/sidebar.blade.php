@@ -1,4 +1,4 @@
-<div class="sidebar" data-image="{{ asset('') }}">
+<div class="sidebar bg-gradient-dark text-white" data-image="{{ asset('') }}">
     <!--
 Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -18,7 +18,7 @@ Tip 2: you can also add an image using data-image tag
                 </a>
             </li>
            
-            <li class="nav-item">
+            <!-- <li class="nav-item"> -->
                 <!-- <a class="nav-link" data-toggle="collapse" href="#laravelExamples" @if($activeButton =='laravel') aria-expanded="true" @endif>
                     <i>
                         <img src="{{ asset('') }}" style="width:25px">
@@ -28,54 +28,55 @@ Tip 2: you can also add an image using data-image tag
                         <b class="caret"></b>
                     </p>
                 </a> -->
-                <div class="collapse @if($activeButton =='laravel') show @endif" id="laravelExamples">
+                <!-- <div class="collapse @if($activeButton =='laravel') show @endif" id="laravelExamples">
                     <ul class="nav">
                         <li class="nav-item @if($activePage == 'user') active @endif">
                             <a class="nav-link" href="{{route('profile.edit')}}">
                                 <i class="nc-icon nc-single-02"></i>
-                                <p>{{ __("User Profile") }}</p>
-                            </a>
-                        </li>
-                        <li class="nav-item @if($activePage == 'user-management') active @endif">
-                            <a class="nav-link" href="{{route('user.index')}}">
-                                <i class="nc-icon nc-circle-09"></i>
-                                <p>{{ __("User Management") }}</p>
+                                <p>{{ __("See Reports") }}</p>
                             </a>
                         </li>
                     </ul>
-                </div>
-            </li>
+                </div> -->
+            <!-- </li> -->
 
             <li class="nav-item @if($activePage == 'table') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'table')}}">
                     <i class="nc-icon nc-notes"></i>
-                    <p>{{ __("Table List") }}</p>
+                    <p>{{ __("Book products") }}</p>
                 </a>
             </li>
-            <li class="nav-item @if($activePage == 'typography') active @endif">
+             <li class="nav-item @if($activePage == 'typography') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'typography')}}">
                     <i class="nc-icon nc-paper-2"></i>
-                    <p>{{ __("Typography") }}</p>
+                    <p>{{ __("Category") }}</p>
                 </a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item @if($activePage == 'icons') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'icons')}}">
                     <i class="nc-icon nc-atom"></i>
                     <p>{{ __("Icons") }}</p>
                 </a>
             </li> -->
-            <li class="nav-item @if($activePage == 'maps') active @endif">
+            <!-- <li class="nav-item @if($activePage == 'maps') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'maps')}}">
                     <i class="nc-icon nc-pin-3"></i>
                     <p>{{ __("Maps") }}</p>
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item @if($activePage == 'notifications') active @endif">
                 <a class="nav-link" href="{{route('page.index', 'notifications')}}">
-                    <i class="nc-icon nc-bell-55"></i>
-                    <p>{{ __("Notifications") }}</p>
+                    <i class="nc-icon nc-paper-2"></i>
+                    <i class=""></i>
+                    <p>{{ __("Buy Products") }}</p>
                 </a>
-            </li>
+            </li> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
+            <li class="nav-item @if($activePage == 'user-management') active @endif">
+                            <a class="nav-link" href="{{route('user.index')}}">
+                                <i class="nc-icon nc-circle-09"></i>
+                                <p>{{ __("Administration") }}</p>
+                            </a>
+                        </li>
             <!-- <li class="nav-item">
                 <a class="nav-link active bg-danger" href="{{route('page.index', 'upgrade')}}">
                     <i class="nc-icon nc-alien-33"></i>

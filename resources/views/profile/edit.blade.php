@@ -110,7 +110,7 @@
                                 </p>
                             </div>
                             <hr>
-                            <!-- <div class="button-container mr-auto ml-auto">
+                            <div class="button-container mr-auto ml-auto">
                                 <button href="#" class="btn btn-simple btn-link btn-icon">
                                     <i class="fa fa-facebook-square"></i>
                                 </button>
@@ -119,8 +119,8 @@
                                 </button>
                                 <button href="#" class="btn btn-simple btn-link btn-icon">
                                     <i class="fa fa-google-plus-square"></i>
-                                </button> -->
-                            <!-- </div> -->
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -20,11 +20,11 @@
                     <p>Filters</p>
                     <div class="pull-right">
                         <span class="badge filter badge-black" data-color="black"></span>
-                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <!-- <span class="badge filter badge-azure" data-color="azure"></span>
                         <span class="badge filter badge-green" data-color="green"></span>
                         <span class="badge filter badge-orange" data-color="orange"></span>
                         <span class="badge filter badge-red" data-color="red"></span>
-                        <span class="badge filter badge-purple active" data-color="purple"></span>
+                        <span class="badge filter badge-purple active" data-color="purple"></span> -->
                     </div>
                     <div class="clearfix"></div>
                 </a>
@@ -32,10 +32,10 @@
             <li class="header-title">{{ __('Sidebar Images') }}</li>
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="{{ asset('/light-bootstrap/img/sidebar-1.jpg') }}" alt="" />
+                    <img src="{{ asset('') }}" alt="" />
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
                     <img src="{{ asset('light-bootstrap/img/sidebar-3.jpg') }}" alt="" />
                 </a>
@@ -59,7 +59,7 @@
                 <div class="">
                     <a href="https://light-bootstrap-dashboard-laravel.creative-tim.com/docs/tutorial-components.html" target="_blank" class="btn btn-default btn-block btn-fill">{{ __('View Documentation') }}</a>
                 </div>
-            </li>
+            </li> -->
             <li class="header-title pro-title text-center">{{ __('Want more components?') }}</li>
             <li class="button-container">
                 <div class="">

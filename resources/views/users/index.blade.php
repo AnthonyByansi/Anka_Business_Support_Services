@@ -20,7 +20,7 @@
          <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('light-bootstrap/img/apple-icon.png') }}">
          <link rel="icon" type="image/png" href="{{ asset('light-bootstrap/img/favicon.ico') }}">
          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-         <title>User management</title>
+         <title>Administration</title>
          <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
          <!--     Fonts and icons     -->
          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -46,11 +46,11 @@
          <!-- Twitter Card data -->
          <meta name="twitter:card" content="product">
          <meta name="twitter:site" content="@creativetim">
-         <meta name="twitter:title" content="Light Bootstrap Dashboard Laravel by Creative Tim & UPDIVISION">
+         <meta name="twitter:title" content="Anka Business support services">
  
          <meta name="twitter:description" content="Start your development with a Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and Up.">
          <meta name="twitter:creator" content="@creativetim">
-         <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/213/opt_lbd_laravel_thumbnail.jpg">
+         <meta name="twitter:image" content="">
  
          <!-- Open Graph data -->
          <meta property="fb:app_id" content="655968634437471">
@@ -59,7 +59,7 @@
          <meta property="og:url" content="https://www.creative-tim.com/live/light-bootstrap-dashboard-laravel" />
          <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/213/opt_lbd_laravel_thumbnail.jpg"/>
          <meta property="og:description" content="Start your development with a Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and Up." />
-         <meta property="og:site_name" content="Creative Tim & UPDIVISION" />
+         <meta property="og:site_name" content="Anka business support services" />
            <!-- Google Tag Manager -->
          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -109,7 +109,7 @@
 
     <div class="wrapper ">
 
-        <div class="sidebar" data-image="{{ asset('light-bootstrap/img/sidebar-5.jpg') }}">
+        <div class="sidebar bg-dark" data-image="{{ asset('') }}">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
         
@@ -117,28 +117,34 @@
         -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        {{ __("Creative Tim") }}
+                    <a href="" class="simple-text">
+                        {{ __("Anka Business Support Services") }}
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item ">
+                <li class="nav-item  active">
+                                    <a class="nav-link" href="{{route('user.index')}}">
+                                        <i class="nc-icon nc-chart-pie-35"></i>
+                                        <p>{{ __("Dashboard") }}</p>
+                                    </a>
+                                </li>
+                    <!-- <li class="nav-item ">
                         <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>{{ __("Dashboard") }}</p>
                         </a>
-                    </li>
+                    </li> -->
                    
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#laravelExamples" aria-expanded="true">
                             <i>
-                                <img src="{{ asset('light-bootstrap/img/laravel.svg') }}" style="width:25px">
-                            </i>
-                            <p>
+                                <img src="{{ asset('') }}" style="width:25px">
+                            </i> -->
+                            <!-- <p>
                                 {{ __('Laravel example') }}
                                 <b class="caret"></b>
-                            </p>
-                        </a>
+                            </p> -->
+                        <!-- </a>
                         <div class="collapse  show " id="laravelExamples">
                             <ul class="nav">
                                 <li class="nav-item ">
@@ -147,52 +153,47 @@
                                         <p>{{ __("User Profile") }}</p>
                                     </a>
                                 </li>
-                                <li class="nav-item  active">
-                                    <a class="nav-link" href="{{route('user.index')}}">
-                                        <i class="nc-icon nc-circle-09"></i>
-                                        <p>{{ __("User Management") }}</p>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
-                    </li>
+                    </li> -->
         
-                    <li class="nav-item ">
+                    <!-- <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'table')}}">
                             <i class="nc-icon nc-notes"></i>
                             <p>{{ __("Table List") }}</p>
-                        </a>
+                        </a> -->
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'typography')}}">
-                            <i class="nc-icon nc-paper-2"></i>
-                            <p>{{ __("Typography") }}</p>
+                            <i class="nc-icon nc-notes"></i>
+                            <p>{{ __("see Reports") }}</p>
                         </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'icons')}}">
-                            <i class="nc-icon nc-atom"></i>
-                            <p>{{ __("Icons") }}</p>
+                            <i class="nc-icon nc-paper-2"></i>
+                            <p>{{ __("Award performance") }}</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <!-- <li class="nav-item ">
                         <a class="nav-link" href="{{route('page.index', 'maps')}}">
                             <i class="nc-icon nc-pin-3"></i>
                             <p>{{ __("Maps") }}</p>
                         </a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{route('page.index', 'notifications')}}">
                             <i class="nc-icon nc-bell-55"></i>
                             <p>{{ __("Notifications") }}</p>
                         </a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link active bg-danger" href="{{route('page.index', 'upgrade')}}">
                             <i class="nc-icon nc-alien-33"></i>
                             <p>{{ __("Upgrade to PRO") }}</p>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>                <div class="fixed-plugin">
@@ -212,7 +213,7 @@
                 <div class="clearfix"></div>
             </a>
         </li>
-        <li class="adjustments-line">
+        <!-- <li class="adjustments-line">
             <a href="javascript:void(0)" class="switch-trigger background-color">
                 <p>Filters</p>
                 <div class="pull-right">
@@ -225,7 +226,7 @@
                 </div>
                 <div class="clearfix"></div>
             </a>
-        </li>
+        </li> -->
         <li class="header-title">Sidebar Images</li>
         <li class="active">
             <a class="img-holder switch-trigger" href="javascript:void(0)">
@@ -288,7 +289,7 @@
                                     <span class="d-lg-none">{{ __('Dashboard') }}</span>
                                 </a>
                             </li>
-                            <li class="dropdown nav-item">
+                            <!-- <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                     <i class="nc-icon nc-planet"></i>
                                     <span class="notification">5</span>
@@ -301,15 +302,15 @@
                                     <a class="dropdown-item" href="#">{{ __('Notification 4') }}</a>
                                     <a class="dropdown-item" href="#">{{ __('Another notification') }}</a>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
+                            </li> -->
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nc-icon nc-zoom-split"></i>
                                     <span class="d-lg-block">&nbsp;{{ __('Search') }}</span>
                                 </a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav   d-flex align-items-center">
+                            </li> -->
+                        <!-- </ul> -->
+                        <!-- <ul class="navbar-nav   d-flex align-items-center">
                             <li class="nav-item">
                                 <a class="nav-link" href=" {{route('profile.edit') }} ">
                                     <span class="no-icon">{{ __('Account') }}</span>
@@ -327,7 +328,7 @@
                                     <div class="divider"></div>
                                     <a class="dropdown-item" href="#">{{ __('Separated link') }}</a>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                     @csrf
@@ -396,16 +397,16 @@
                 </div>
             </div>
         </div>
-        <div class="alert alert-danger">
+        <!-- <div class="alert alert-danger">
             <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
                 <i class="nc-icon nc-simple-remove"></i>
             </button>
             <span>
             This is a <b>PRO</b> feature!</span>
-        </div>
+        </div> -->
     </div>
 </div>
-            <footer class="footer">
+            <!-- <footer class="footer">
 <div class="container -fluid ">
     <nav>
         <ul class="footer-menu">
@@ -431,7 +432,7 @@
         </p>
     </nav>
 </div>
-</footer>            </div>
+</footer>            </div> -->
 
     </div>
    

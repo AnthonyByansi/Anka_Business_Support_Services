@@ -346,7 +346,7 @@ body>.navbar-collapse {
     width: 260px;
     display: block;
     z-index: 1;
-    color: #fff;
+    color: rgb(13, 11, 11);
     font-weight: 200;
     background-size: cover;
     background-position: center center;
@@ -379,7 +379,7 @@ body>.navbar-collapse .sidebar-background {
 .sidebar .logo,
 body>.navbar-collapse .logo {
     padding: 10px 15px 9px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(18, 17, 17, 0.2);
     position: relative;
     z-index: 4;
 }
@@ -389,8 +389,7 @@ body>.navbar-collapse .logo p {
     float: left;
     font-size: 20px;
     margin: 10px 10px;
-    color: #FFFFFF;
-    line-height: 20px;
+    color: rgb(14, 13, 13) line-height: 20px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -687,15 +686,15 @@ body>.navbar-collapse[data-color="red"]:after {
     background-size: 150% 150%;
 }
 
-.sidebar[data-color="purple"]:after,
-body>.navbar-collapse[data-color="purple"]:after {
-    background: #9368E9;
-    background: -moz-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9368E9), color-stop(100%, #943bea));
-    background: -webkit-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -o-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: -ms-linear-gradient(top, #9368E9 0%, #943bea 100%);
-    background: linear-gradient(to bottom, #9368E9 0%, #943bea 100%);
+.sidebar[data-color="blue"]:after,
+body>.navbar-collapse[data-color="blue"]:after {
+    background: #673bea;
+    background: -moz-linear-gradient(top, #673bea 0%, #673bea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, ), color-stop(100%, #673bea));
+    background: -webkit-linear-gradient(top, #673bea 0%, #673bea 100%);
+    background: -o-linear-gradient(top, #673bea 0%, #673bea 100%);
+    background: -ms-linear-gradient(top, #673bea 0%, #673bea 100%);
+    background: linear-gradient(to bottom, #673bea 0%, #673bea 100%);
     background-size: 150% 150%;
 }
 
@@ -1381,22 +1380,22 @@ fieldset[disabled] .btn-neutral.active {
 .btn-neutral.btn-fill:active,
 .btn-neutral.btn-fill.active,
 .open>.btn-neutral.btn-fill.dropdown-toggle {
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+    background-color: blue;
+    color: blue;
 }
 
 .btn-neutral.btn-fill .caret {
-    border-top-color: #FFFFFF;
+    border-top-color: blue;
 }
 
 .btn-neutral .caret {
-    border-top-color: #FFFFFF;
+    border-top-color: blue;
 }
 
 .btn-neutral:active,
 .btn-neutral.active,
 .open>.btn-neutral.dropdown-toggle {
-    background-color: #FFFFFF;
+    background-color: blue;
     color: #888888;
 }
 

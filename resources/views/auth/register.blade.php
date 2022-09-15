@@ -1,7 +1,7 @@
 @extends('layouts.app', ['activePage' => 'register', 'title' => 'Anka BUsiness Support Services'])
 
 @section('content')
-    <div class="full-page register-page section-image" data-color="6066FF" data-image="{{ asset('') }}">
+    <div class="full-page register-page section-image" data-color="blue" data-image="{{ asset('') }}">
         <div class="content">
             <div class="container">
                 <div class="card card-register card-plain text-center">
@@ -42,7 +42,8 @@
                                     </div>
                                 </div> -->
                             </div>
-                            <div class="col-md-4 mr-auto">
+                            <div class="card card bg-dark col-md-4 mr-auto">
+                            <h3 class="header text-white text-center">{{ __('Sign up') }}</h3>
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf
                                     <div class="card card-plain">
@@ -50,6 +51,10 @@
                                             <div class="form-group">
                                                 <input type="text" name="name" id="name" class="form-control" placeholder="{{ __('Name') }}" value="{{ old('name') }}" required autofocus>
                                             </div>
+                                            <div class="form-group">
+                                                <input type="text" name="username" id="username" class="form-control" placeholder="{{ __('username') }}" value="{{ old('username') }}" required autofocus>
+                                            </div>
+
 
                                             <div class="form-group">   {{-- is-invalid make border red --}}
                                                 <input type="email" name="email" value="{{ old('email') }}" placeholder="Enter email" class="form-control" required>
@@ -72,7 +77,7 @@
                                             </div>
 
                                             <div class="footer text-center">
-                                                <button type="submit" class="btn btn-fill btn-neutral btn-wd">{{ __('Create Free Account') }}</button>
+                                                <button type="submit" class="btn btn-fill btn-neutral btn-wd">{{ __('Register') }}</button>
                                             </div>
                                         </div>
                                     </div>

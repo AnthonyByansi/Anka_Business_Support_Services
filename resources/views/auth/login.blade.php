@@ -5,16 +5,18 @@
         <div class="content pt-5">
             <div class="container mt-5">    
                 <div class="col-md-4 col-sm-6 ml-auto mr-auto">
+                    
                     <form class="form" method="POST" action="{{ route('login') }}">
                         @csrf
-                        <div class="card card-login card-hidden">
-                            <div class="card-header ">
+                        
+                        <div  class="card card bg-dark card-login card-hidden">
+                            <div class=" bg-dark text-white card-header ">
                                 <h3 class="header text-center">{{ __('Login') }}</h3>
                             </div>
                             <div class="card-body ">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="email" class="col-md-6 col-form-label">{{ __('E-Mail Address') }}</label>
+                                        <label for="email" class="col-md-6 col-form-label">{{ __('user_Name') }}</label>
             
                                         <div class="col-md-14">
                                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', 'admin@lightbp.com') }}" required autocomplete="email" autofocus>
@@ -51,13 +53,10 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <div class="container text-center" >
-                                        <button type="submit" class="btn btn-warning btn-wd">{{ __('Login') }}</button>
+                                        <button type="submit" class="btn btn-primary bg-primary text-white btn-wd">{{ __('Login') }}</button>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <a class="btn btn-link"  style="color:#23CCEF" href="{{ route('password.request') }}">
-                                        {{ __('Forgot password?') }}
-                                        </a>
-                                        <a class="btn btn-link" style="color:#23CCEF" href="{{ route('register') }}">
+                                        <a class="btn btn-link text-white"  style="color:blue" href="{{ route('register') }}">
                                             {{ __('Create account') }}
                                         </a>
                                     </div>
